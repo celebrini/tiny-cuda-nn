@@ -215,5 +215,5 @@ setup(
 	include_package_data=True,
 	zip_safe=False,
 	ext_modules=ext_modules,
-	cmdclass={"build_ext": BuildExtension}
+	cmdclass={"build_ext": BuildExtension.with_options(use_ninja=False)}
 )
